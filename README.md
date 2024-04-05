@@ -59,5 +59,6 @@ Estas claves son necesarias para acceder a las APIs utilizadas por el proyecto.
 Con las dependencias instaladas y el entorno configurado, estás listo para ejecutar el script DocxGenerator. Para generar el documento de Word con el análisis de la economía argentina, ejecuta:
 
 ```bash
-python3 DocxGenerator.py```
+python3 DocxGenerator.py
+```
 Este comando iniciará el proceso de recopilación y análisis de datos, y generará un documento de Word Analisis_Economia_Argentina.docx en el directorio del proyecto.
