@@ -1,5 +1,19 @@
+# DocxGenerator: Generador de Documentos para Análisis Económico de Argentina
 
-Economy agent is an AI Agent that searches for google information. 
-In this case is made for making Daily Economy Resumes.
+DocxGenerator es una herramienta diseñada para automatizar la creación de documentos de Word que contienen un análisis comprensivo de la economía argentina, basado en las últimas noticias y tendencias del mercado. Este proyecto utiliza Python y diversas bibliotecas para extraer, analizar y documentar los factores que influencian la economía de Argentina.
 
-The docx generator is a simple python script made to create word docuemnts with the information provided by the agent.
+## Pre-requisitos
+
+Antes de comenzar, asegúrate de tener Python instalado en tu sistema. Este proyecto ha sido desarrollado y probado con Python 3.8 y versiones superiores.
+
+## Instalación
+
+Para configurar tu entorno de desarrollo y trabajar con el proyecto DocxGenerator, sigue los siguientes pasos:
+
+### Clonar el Repositorio
+
+Primero, clona el repositorio a tu máquina local usando git:
+
+```bash
+git clone https://github.com/tu-usuario/DocxGenerator.git
+cd DocxGenerator```
