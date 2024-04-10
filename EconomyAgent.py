@@ -8,6 +8,7 @@ from datetime import date
 load_dotenv()
 day = date.today()
 searchtool = SerperDevTool()
+
 researcher = Agent(
     role="Asistente de Investigación Senior",
     goal=f"Buscar las últimas noticias sobre la economía y el estado del mercado de Argentina para el dia {day}.",
@@ -37,8 +38,7 @@ research_task = Task(
     Este análisis debería cubrir variaciones del mercado, decisiones políticas, cambios en la industria y el impacto de nuevas tecnologías.
     Es esencial remarcar las tendencias del mercado asi como las tendencias de la tecnologia en el pais.
     Ejemplo de informacion que buscas es: cotizacion del dolar hoy, suba de acciones de mercado libre, nueva empresa unicornio argentina, nueva tecnologia llega a argentina, nueva empresa importante sale a la bolsa, etc.""",
-    expected_output="""Se debera presentar un informe detallado para cada noticia o informacion a documentar.
-""",
+    expected_output="""Se debera presentar un informe detallado para cada noticia o informacion a documentar.""",
     agent= researcher
 )
 write_task = Task(
@@ -54,8 +54,9 @@ write_task = Task(
 crew = Crew(
     agents = [researcher, writer],
     tasks= [research_task, write_task],
-    verbose=1
+    verbose=False
 )
 result = crew.kickoff()
+
 def getResult():
     return result
