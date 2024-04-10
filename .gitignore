@@ -1,4 +1,4 @@
 env/
 .env
-*.docx
 __pycache__
+economic_analisis_2024
